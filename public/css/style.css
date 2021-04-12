@@ -1,90 +1,34 @@
-/* ## - Pour des écrans plus grands que 1024px 3 carrés qui font chaqu'un 1/3 de l'écran en largeur, couleurs: 1°) rouge, 2°) vert, 3°) orange
-
-## - Pour des écrans entre 600px et 1024px 3 carrés qui font chaqu'un 1/2 de l'écran en largeur, couleurs: 1°) rouge, 2°) vert, 3°) orange
-
-## - Pour des écrans entre 320px et 600px 3 carrés qui font chaqu'un 2/2 de l'écran en largeur, couleurs: 1°) rouge, 2°) vert, 3°) orange */
-
-
 body{
-    width: 1000px;
-    height: 1000px;
+    width: 1080px;
+    height: 1080px;
 }
+.square:first-child{
+        background-color: red;
+    }
+    .square:nth-child(2){
+        background-color: green;
+    }
+    .square:nth-child(3){
+        background-color: tomato;
+    }
 
-@media (min-width: 1024px){
-
+@media (min-width : 1024px){
     .square{
         width: 33%;
         height: 33%;
     }
-
-    .square:first-child{
-        background-color: red;
-
-    }
-
-    .square:nth-child(2){
-        background-color: green;
-    }
-
-
-    .square:nth-child(3){
-        background-color: tomato;
-    }
 }
 
-
-
-@media (min-width: 600px) and (max-width : 1023px){
-
-
-.square{
-    width: 50%;
-    height: 50%;
-
-}
-
-.square:first-child{
-    background-color: red;
-
-}
-
-.square:nth-child(2){
-    background-color: green;
-}
-
-
-.square:nth-child(3){
-    background-color: tomato;
-}
-
-}
-
-@media (min-width: 320px) and (max-width: 599px){
-
-
-
+@media (min-width : 600px) and (max-width : 1023px){
     .square{
         width: 50%;
         height: 50%;
-    
     }
-
-
-    .square:first-child{
-        background-color: red;
-    
-    }
-    
-    .square:nth-child(2){
-        background-color: green;
-    }
-    
-    
-    .square:nth-child(3){
-        background-color: tomato;
-    }
-
-
-
 }
 
+@media (min-width : 320px) and (max-width : 599px){
+    .square{
+        width: 100%;
+        height: 100%;
+    }
+}
